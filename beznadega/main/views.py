@@ -5,6 +5,10 @@ def about(request):
     return render(request, 'main/about.html')
 
 
+def layout(request):
+    return render(request, 'main/layout.html')
+
+
 def pyti(request):
     return render(request, 'main/pyti.html')
 
