@@ -11,33 +11,44 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
-<body>
-    <header>
-        <div class="header-bg">
-            <img src="{% static 'main/img/image 11.png' %}" alt="Компьютер">
-            <div class="header-gb">
-                <img src="{% static 'main/img/image 12.png' %}" alt="Вход">
-            </div>
+<header>
+    <div class="header-img">
+        <a href="{% url 'FAQ' %}"><button class="head-info"><img src="{% static 'main/img/FAQ.png' %}" width="180px"></button></a>
+        <button class="head-info"><img src="{% static 'main/img/cours.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/help.png' %}" width="180px"></button>
         </div>
-    </header>
-    <aside>
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Информация</li></a>
-            <a href="{% url 'about' %}"><li><i class="fa-solid fa-business-time"></i>Курсы</li></a>
-            <a href=""><li><i class="fa-solid fa-film"></i>Помощь</li></a>
-        </ul>
-    <h3>Путь первокурсника</h3>
-    </aside>
+</header>
+<body>
     <section>
-        <ul>
-		    <a href="{% url 'home' %}"><li>Регистрация на платформе</li>
-			<a href="{% url 'about' %}"><li>Навигация по платформе</li>
-			<a href=""><li>Помощь</li>
-		</ul>
+        <div class="foto">
+            <ul>
+                <h1>Ваше <span>руководство</span> по онлайн-курсам</h1>
+                <li>Поможем разобраться в предлагаемых <br>к изучению онлайн-курсах!</br></li>
+            </ul>
+            <img src="{% static 'main/img/вшапку 1.png' %}" width="707.15px" height="493.18px"  alt="">
+        </div>
     </section>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+    <nav>
+        <div class="pyti">
+            <img src="{% static 'main/img/Rectangle 7.png' %}" width="1718.1px" height="558.64px"  alt="Snow">
+            <div class="pervak"><img src="{% static 'main/img/первокурсник 1.png' %}" width="644.7px" height="432.06px" alt=""></div>
+            <div class="center"><h1>Путь первокурсника</h1></div>
+            <div class="niz"><p>Подробный гайд по регистрации <br>на разных платформах.</br></p></div>
+            <a href="{% url 'about' %}"><button class="image-button"><img src="{% static 'main/img/Frame 4.png' %}"></button></a>
+        </div>
+        <div class="pyti2">
+            <img src="{% static 'main/img/Rectangle 7.png' %}" width="1718.1px" height="558.64px"  alt="Snow">
+            <div class="stydik"><img src="{% static 'main/img/обзор 1.png' %}" width="644.7px" height="432.06px" alt=""></div>
+            <div class="center1"><h1>Обзор</h1></div>
+            <div class="niz1"><p>Видео-презентация сайта.</p></div>
+            <button class="image-button1"><img src="{% static 'main/img/Frame 4.png' %}"></button>
+        </div>
+        <div class="pyti3">
+            <img src="{% static 'main/img/Rectangle 7.png' %}" width="1718.1px" height="558.64px"  alt="Snow">
+            <div class="komp"><img src="{% static 'main/img/дэм 1.png' %}" width="644.7px" height="432.06px" alt=""></div>
+            <div class="center2"><h1>Курсы</h1></div>
+            <div class="niz2"><p>Вся необходимая информация <br>по нужному Вам курсу.</br></p></div>
+            <a href="{% url 'course' %}"><button class="image-button"><img src="{% static 'main/img/Frame 4.png' %}"></button></a>
+    </nav>
 </body>
 </html>

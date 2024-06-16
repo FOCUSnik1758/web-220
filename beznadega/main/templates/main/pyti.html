@@ -1,0 +1,74 @@
+{% load static %}
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/pyti.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<header>
+    <div class="header-img">
+        <button class="head-info"><img src="{% static 'main/img/info.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/cours.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/help.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/tipyl.png' %}" width="80px"></button>
+        </div>
+</header>
+<body>
+    <div class="info">
+        <p>Путь первокурсника</p>
+        <div class="line"><img src="{% static 'main/img/skobka.png' %}" width="400px"></div>
+    </div>
+    <nav>
+
+
+
+
+
+
+        <details class="details">
+  <summary class="details__title"><img src="{% static 'main/img/reg per.png' %}" width="1709.47px"></summary>
+  <div class="details__content">
+    <p>Самостоятельно зарегистрироваться на сайте <a href="https://openedu.ru/">openedu.ru</a>. Затем зайти в редактирование профиля, указать фамилию, имя и отчество так, как они указаны у вас в студенческом билете. Адрес электронной почты должен принадлежать домену urfu.me. Также необходимо указать, что вы студент Уральского федерального университета. Если у Вас уже есть учетная запись на openedu.ru с личной электронной почтой из другого домена, ее нужно отредактировать в разделе «Мой профиль», пункт «Профиль», указав почту из домена urfu.me.</p>
+    <p><b>ВАЖНО! Ни в коем случае не нужно записываться самостоятельно на курс, если на <a href="https://inf-online.urfu.ru/ru/onlain-kursy/">странице</a> указано, что запись производят сотрудники вуза-партнера</b>, в противном случае Вы попадете не на ту версию курса, где будут открыты не все задания и у Вас не будет доступа к итоговому тестированию.</p>
+    <p>Необходимо учесть, что выполнение контрольно-оценочных заданий курсов ограничено по сроку. Дата закрытия доступа к выполнению заданий указана на вкладке «График открытия материалов» внутри курса. К этой дате вам необходимо набрать проходные баллы по всем разделам курса, кроме итогового контроля. Проверить количество баллов, которые вы набрали, можно внутри онлайн-курса в разделе «Прогресс». Там же указаны проходные баллы по разделам в виде таблицы под диаграммой. До сдачи итогового тестирования, баллы всех разделов, кроме итогового контроля, должны быть больше 40.</p>
+    <p>В процессе изучения материалов, скорее всего, у вас будут возникать вопросы. Их всегда можно задать на форуме внутри курса в разделе «<b>Обсуждение</b>». Обязательно максимально подробно и четко формулируйте обращение, указывая раздел, тему и блок курса в котором возник вопрос. Администраторы форума помогут вам или подскажут где искать ответ. Также необходимо внимательно <b>следить за сроками сдачи контрольно-оценочных мероприятий</b> и выполнять их вовремя - сроки указаны на странице «<b>График открытия материалов</b>». После проведения итогового контроля выполненные задания внутри курса не учитываются.</p>
+    <p>Внимательно ознакомиться с инструкциями по прохождению итогового тестирования с прокторингом, они расположены в разделе «<a href="https://inf-online.urfu.ru/ru/grafik-ehkzamenov/">График экзаменов</a>». У разных вузов могут быть разные системы и условия сдачи, поэтому внимательно изучите инструкцию перед прохождением итогового тестирования даже если раньше Вы уже сдавали экзамены онлайн. Прохождение итогового тестирования без прокторинга не может быть засчитано. Сроки проведения итогового тестирования с прокторингом также размещаются на «<a href="https://inf-online.urfu.ru/ru/grafik-ehkzamenov/">График экзаменов</a>».</p>
+  </div>
+</details>
+
+<details class="details">
+  <summary class="details__title"><img src="{% static 'main/img/help per.png' %}" width="1709.47px"></summary>
+  <div class="details__content">
+    <p>Адрес поддержки онлайн-курсов УрФУ: <a href="https://openedu.ru/coursefeedback/">здесь</a></p>
+  </div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+</body>
+</html>

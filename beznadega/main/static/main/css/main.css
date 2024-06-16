@@ -1,131 +1,206 @@
 body {
-    background: #2c2c2c;
+background: linear-gradient(180deg, #FFFFFF 24.38%, #6B7AFF 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+font-family: Jost;
+font-size: 20.68px;
+font-weight: 400;
+text-align: left;
+
 }
+
+/* тут начало главной страницы*/
 
 header {
-    width: 1440px;
-    height: 192px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.header-bg {
-    width: 102px;
-    height: 100px;
-    margin-top: 15px;
-    margin-left: 10px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.header-gb {
-    width: 102px;
-    height: 100px;
-    margin-top: -114px;
-    margin-right: -1790px;
-    gap: 0px;
-    opacity: 0px;
-    float: right;
-}
-
-
-aside {
-    float: left;
-    background: #2c2c2c;
-    width: 100%;
-    padding: 2.5%;
-    color: #fff;
-    border-top: 5px solid #4d4d4d;
-}
-
-aside img {
-    width: 150px;
-    float: left;
-}
-
-aside .logo{
-    font-size: 40px;
-    margin-top: 10px;
-    font-weight: bold;
-    position: relative;
-    top: -5px;
-}
-
-aside h3 {
-    margin-top: 50px;
-    font-size: 28px;
-    padding: 34px 20px 26px 50px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    border: 5px solid  yellow;
-}
-
-
-aside ul li {
-    position: relative;
-    display: block;
-    padding: 34px 20px 26px 50px;
-    background-position: 35px 40px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    border: 5px solid  yellow;
-    align-items: center;
-    column-gap: 30px;
-    color: #fff;
-    margin-top: 5px;
-    transition: transform .6s ease;
+    background:#ededed;
 }
 
 
 
-aside ul {
+.header-img {
     display: flex;
-    align-items: center;
-    column-gap: 500px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.head-info{
+    border: none;
 }
 
 
-aside ul li:hover, aside ul a:hover {
-    color: #eb5959;
-    text-decoration: none;
-    transform: scale(1.05);
+.foto {
+  display: flex;
+  justify-content: flex-end;
+  margin-top:75px;
+  margin-right: 350px;
 }
 
-section ul li{
-    color:#fff;
-    padding: 10px;
-    background-size: 76px;
-    font-size:18px;
-    line-height:36px;
+.foto ul {
+    margin-top:100px;
+    margin-right: 45px;
 }
 
-section ul {
-    margin-top: 20%;
-    border: 5px solid  yellow;
-    padding: 34px 20px 26px 50px;
-    column-gap: 500px;
-    font-weight: 600;
-    font-size: 18px;
+.foto li {
+    padding-top: 15px;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.foto h1{
+  text-decoration: underline;
+  /* Смещаем подчёркивание на 20 пикселей вниз */
+  text-underline-offset: 10px;
+}
+
+.foto span{
+color: rgba(131, 146, 223, 1);
 
 }
 
+.pyti {
+    position: relative;
+    text-align: center;
+    margin-top:75px;
+    margin-left: 102.95px;
+}
 
-main .features {
-    float: left;
-    color: #fff;
-    margin-top: 100px;
+.center h1{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.niz {
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+
+.niz p{
+    padding-top:10px;
     text-align: left;
-    width: 75%;
-    border: 1px solid red;
-    padding: 5px;
 }
 
+.pervak {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10%;
+  left: 55%;
+}
+
+.pyti2{
+    position: relative;
+    text-align: center;
+    margin-top:75px;
+    margin-left: 102.95px;
+}
+
+.center1 h1{
+    position: absolute;
+    top: 35%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.niz1 {
+    position: absolute;
+    top: 45%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.stydik {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10%;
+  left: 8%;
+}
+
+.pyti3 {
+    position: relative;
+    text-align: center;
+    margin-top:75px;
+    margin-left: 102.95px;
+}
+
+.center2 h1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.niz2 {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+.niz2 p{
+    padding-top:40px;
+    text-align: left;
+}
+
+.komp {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10%;
+  left: 55%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    width: 644.7px
+    margin-height: 432.06px
+    left: 0;
+    height: 200px;
+}
+
+.image-button {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 55%;
+  left: 19%;
+  border: none;
+  background-color: #fff;
+}
+
+.image-button1 {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 55%;
+  right: 19%;
+  border: none;
+  background-color: #fff;
+}
+
+.image-button2 {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 55%;
+  left: 11%;
+  border: none;
+  background-color: #fff;
+}
+
+/*конец главного модуля */
+
+/*Начало about*/
 
 
-main .features h1{font-size: 50px;}
-main .features p {max-width: 400px; margin: 20px auto}
+
+
+
+
 
 

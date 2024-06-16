@@ -1,11 +1,45 @@
-{% extends 'main/layout.html' %}
-
-{% block title %}Навигация по платформе{% endblock %}
-
-{% block content %}
-    <div class="features">
-        <h1>Навигация по платформе</h1>
-        <p>тут текст какой вы скажете пока я хз что тут будет но тут что-то будет я жду просто уже фигму от дизайнерши и я очень устал</p>
-        <button class="btn btn-danger">На страницу по курсам</button>
+{% load static %}
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<header>
+    <div class="header-img">
+        <button class="head-info"><img src="{% static 'main/img/info.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/cours.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/help.png' %}" width="180px"></button>
+        <button class="head-info"><img src="{% static 'main/img/tipyl.png' %}" width="80px"></button>
+        </div>
+</header>
+<body>
+    <div class="info">
+        <p>Выберите необходимую <br>платформу, чтобы посмотреть путь</br></p>
+        <div class="line"><img src="{% static 'main/img/line.png' %}" width="600px"></div>
     </div>
-{% endblock %}
+    <section>
+        <div class="vsego">
+            <p>Всего: 6 платформ</p>
+            <div class="cherta"><img src="{% static 'main/img/line 1.png' %}"></div>
+        </div>
+    </section>
+    <nav>
+        <div class="navi-img">
+            <a href="{% url 'pyti' %}"><button class="nav-imge"><img src="{% static 'main/img/openedu.png' %}" width="400px"></button></a>
+            <a href="{% url 'pyti1' %}"><button class="nav-imge1"><img src="{% static 'main/img/urfu.png' %}" width="400px"></button></a>
+            <a href="{% url 'pyti2' %}"><button class="nav-imge2"><img src="{% static 'main/img/learn.png' %}" width="400px"></button></a>
+            <a href="{% url 'pyti3' %}"><button class="nav-imge3"><img src="{% static 'main/img/lxp.png' %}" width="400px"></button></a>
+            <a href="{% url 'pyti4' %}"><button class="nav-imge4"><img src="{% static 'main/img/ulern.png' %}" width="400px"></button></a>
+            <a href="{% url 'pyti5' %}"><button class="nav-imge5"><img src="{% static 'main/img/ulern urfu.png' %}" width="400px"></button></a>
+
+        </div>
+    </nav>
+</body>
+</html>
