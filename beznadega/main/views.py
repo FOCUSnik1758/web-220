@@ -5,8 +5,8 @@ def about(request):
     return render(request, 'main/about.html')
 
 
-def layout(request):
-    return render(request, 'main/layout.html')
+def index(request):
+    return render(request, 'main/index.html')
 
 
 def pyti(request):
