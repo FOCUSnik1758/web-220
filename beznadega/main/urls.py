@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('cours', views.about, name='about'),
+    path('video', views.video, name='video'),
     path('openedu', views.pyti, name='pyti'),
     path('openedu.urfu', views.pyti1, name='pyti1'),
     path('learnonline.hse.ru', views.pyti2, name='pyti2'),

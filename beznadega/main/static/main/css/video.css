@@ -1,0 +1,37 @@
+body {
+background: linear-gradient(180deg, #FFFFFF 0%, #92B1FF 100%),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+min-height: 110vh;
+margin: 0;
+}
+
+
+header {
+    background:#ededed;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.head-info{
+    border: none;
+}
+
+.image-button {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 55%;
+  left: 19%;
+  border: none;
+  background-color: #fff;
+}
+
+.vod{
+    padding-top: 150px;
+    display: flex; justify-content: center;
+}
